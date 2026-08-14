@@ -1,0 +1,14 @@
+# Requirements profile for the handbook test corpus. Only [profile] lives
+# here, so `look`/`guess` behave exactly as without this file.
+#
+# Chosen to exercise all three verdict kinds against the planted corpus:
+# "security training" is a real clustered topic (PASS once confirmed),
+# "documentation" matches only a proposed label (UNVERIFIED until tagged),
+# "deployment" text exists but never clusters at the 0.70 threshold (FAIL,
+# with the honest phrasing that the subject may sit in ungrouped passages).
+
+[profile]
+intended_use = "answering employee questions about internal processes"
+required_topics = ["security training", "deployment", "documentation"]
+max_duplication_pct = 30.0
+min_words = 500

@@ -1,0 +1,65 @@
+{
+  "defects": [
+    {
+      "id": "nav-breadcrumb",
+      "kinds": ["boilerplate", "exact_duplicate"],
+      "snippets": ["Home > Documents > Shared Drive > Teams > Operations"],
+      "note": "export junk pasted verbatim at the top of 5 files"
+    },
+    {
+      "id": "copyright-footer",
+      "kinds": ["boilerplate", "exact_duplicate"],
+      "snippets": ["This document is confidential and intended solely for internal distribution"],
+      "note": "verbatim in 3 files"
+    },
+    {
+      "id": "status-update-copy",
+      "kinds": ["exact_duplicate"],
+      "snippets": ["The migration workstream remains on track"],
+      "note": "March status paragraph pasted unchanged into the April update"
+    },
+    {
+      "id": "refund-reworded",
+      "kinds": ["near_duplicate"],
+      "snippets": [
+        "Refunds are issued to the original payment method within five business days",
+        "the refund goes back to the original payment method within five working days"
+      ],
+      "note": "two single-paragraph files, tight rewording; chunk == paragraph here so near_dupes gets a fair chunk-level chance. Similarity lands where it lands -- if the threshold misses it, the sweep shows where it would be caught."
+    },
+    {
+      "id": "filler-usual-channels",
+      "kinds": ["generic"],
+      "snippets": ["Further updates will be shared through the usual channels"],
+      "note": "generic's recall on diverse dirt is genuinely unknown -- the centroid measures typicality and this corpus is heterogeneous"
+    },
+    {
+      "id": "filler-align",
+      "kinds": ["generic"],
+      "snippets": ["Stakeholders should align on the appropriate process going forward"]
+    },
+    {
+      "id": "filler-intake",
+      "kinds": ["generic"],
+      "snippets": ["feedback is welcome through the standard intake form"]
+    },
+    {
+      "id": "wall-of-text",
+      "kinds": ["length_outlier"],
+      "snippets": ["the returns processing backlog that built up during the February promotion"],
+      "note": "one ~430-word paragraph with no breaks, wiki-export texture"
+    },
+    {
+      "id": "stranded-fragment",
+      "kinds": ["length_outlier"],
+      "snippets": ["circulate revised timeline before Friday standup"],
+      "note": "22 words -- inside the 20-24 window where pack() keeps the chunk but length_short=25 flags it; below 20 words pack() silently drops the chunk and no signal can ever see it"
+    },
+    {
+      "id": "mojibake-export",
+      "kinds": ["encoding_artifact"],
+      "snippets": ["churn dropped below 3% for the first time"],
+      "note": "unclaimed by design -- no signal detects encoding junk yet; planted dirt waiting for the signal that claims it"
+    }
+  ]
+}

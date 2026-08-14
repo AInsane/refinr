@@ -1,0 +1,41 @@
+{
+  "defects": [
+    {
+      "id": "footer-boilerplate",
+      "kinds": ["boilerplate", "exact_duplicate"],
+      "snippets": ["This document is maintained by the People Operations team"],
+      "note": "planted verbatim in deployment.md, handbook.md, onboarding.md, security.md; claimed by both signals by design"
+    },
+    {
+      "id": "security-training-verbatim",
+      "kinds": ["exact_duplicate"],
+      "snippets": ["All employees must complete the annual security awareness training"],
+      "note": "verbatim in onboarding.md and security.md"
+    },
+    {
+      "id": "security-training-reworded",
+      "kinds": ["near_duplicate"],
+      "snippets": [
+        "All employees must complete the annual security awareness training",
+        "Security awareness training must be finished by every staff member"
+      ],
+      "note": "0.956 paragraph-level similarity. EXPECTED MISS at chunk level: packing dilutes below the 0.95 chunk threshold. The harness exposing this is the point; the fix is the next benchmark-justified commit."
+    },
+    {
+      "id": "misc-filler-refer",
+      "kinds": ["generic"],
+      "snippets": ["Please refer to the relevant section of the documentation"]
+    },
+    {
+      "id": "misc-filler-elsewhere",
+      "kinds": ["generic"],
+      "snippets": ["Various other topics are covered elsewhere in this handbook"]
+    },
+    {
+      "id": "kitchen-off-topic",
+      "kinds": ["off_topic"],
+      "snippets": ["The kitchen on floor three is restocked on Mondays and Thursdays"],
+      "note": "unclaimed by design -- no signal detects off_topic yet; the harness reports it as planted-but-unclaimed"
+    }
+  ]
+}
